@@ -93,23 +93,23 @@ const database = {
 
   promotion: [
     {
-      image: "../images/promo/promo-1.jpg",
+      image: "./images/promo/promo-1.jpg",
       text: "Promo 1",
     },
     {
-      image: "../images/promo/promo-2.jpg",
+      image: "./images/promo/promo-2.jpg",
       text: "Promo 2",
     },
     {
-      image: "../images/promo/promo-3.jpg",
+      image: "./images/promo/promo-3.jpg",
       text: "Promo 3",
     },
     {
-      image: "../images/promo/promo-4.jpg",
+      image: "./images/promo/promo-4.jpg",
       text: "Promo 4",
     },
     {
-      image: "../images/promo/promo-5.jpg",
+      image: "./images/promo/promo-5.jpg",
       text: "Promo 5",
     },
   ],
