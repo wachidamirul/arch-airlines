@@ -9,7 +9,13 @@ Matkul : Pemrograman Web 1 </br> Prodi : Teknik Informatika
 
 ## Getting started
 
-Website sederhana yang dikembangkan untuk platform jual beli motor. Menggunakan file [products.js](./public/js/products.js) sebagai sumber data untuk mengelola informasi produk. Fitur utama mencakup pencarian motor berdasarkan brand dan model, serta menampilkan detail dari setiap motor yang tersedia.
+Website ini dirancang untuk perusahaan yang menyediakan jasa penerbangan, seperti charter pesawat, penerbangan wisata, dan penerbangan kargo. Website ini akan memungkinkan pelanggan untuk:
+
+- Mencari dan memesan penerbangan
+- Mengelola pemesanan mereka
+- Melacak status penerbangan mereka
+- Mempelajari tentang layanan yang ditawarkan perusahaan
+- Menghubungi perusahaan untuk informasi lebih lanjut
 
 ### Installation
 
