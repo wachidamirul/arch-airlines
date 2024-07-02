@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   getBandara();
   promoSlider();
+  services();
 });
 
 const getBandara = () => {
@@ -61,4 +62,13 @@ const promoNavigation = (slides) => {
 
   window.prevSlide = prevSlide;
   window.nextSlide = nextSlide;
+};
+
+const services = () => {
+  const serviceList = database.service;
+  const service = document.getElementById("service-list");
+
+  serviceList.map((item) => {
+    service.innerHTML += `<div class="relative bg-card rounded-lg bg-center bg-cover bg-no-repeat border min-h-[302px] size-full"style=background-image:url('${item.image}')><div class="relative pt-6 px-6 text-center z-10"><span class="font-light text-muted-foreground text-xs tracking-[0.2em] uppercase">Cabin Features</span><h3 class="after:mx-auto bottom-line font-semibold mt-2 text-lg tracking-wider">${item.title}</h3></div></div>`;
+  });
 };

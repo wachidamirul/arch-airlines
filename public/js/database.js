@@ -113,4 +113,23 @@ const database = {
       text: "Promo 5",
     },
   ],
+
+  service: [
+    {
+      title: "First Class",
+      image: "./images/services/service-1.jpg",
+    },
+    {
+      title: "Bussiness Class",
+      image: "./images/services/service-2.jpg",
+    },
+    {
+      title: "Premium Class",
+      image: "./images/services/service-3.jpg",
+    },
+    {
+      title: "Economy Class",
+      image: "./images/services/service-4.jpg",
+    },
+  ],
 };
