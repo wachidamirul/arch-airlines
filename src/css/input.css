@@ -50,6 +50,10 @@
 }
 
 @layer components {
+  .hero-overlay {
+    @apply after:absolute after:bottom-0 after:left-0 after:h-2/5 after:w-full after:bg-gradient-to-t after:from-white after:to-transparent;
+  }
+
   .navbar-fixed {
     @apply fixed bg-white/90 backdrop-blur-sm;
     box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
@@ -75,12 +79,12 @@
     @apply after:mt-1 after:block after:h-[2px] after:w-12 after:bg-destructive;
   }
 
-  .fleet-list {
+  .overlay-bg {
     @apply after:absolute after:bottom-0 after:left-0 after:h-4/5 after:w-full after:bg-gradient-to-t after:from-black/70 after:to-transparent;
   }
 
   .footer-link {
-    @apply flex items-center gap-2 text-sm font-medium leading-5 text-muted hover:text-secondary;
+    @apply flex items-center gap-2 text-sm font-medium leading-5 text-muted-foreground hover:text-primary;
   }
 }
 

@@ -132,4 +132,35 @@ const database = {
       image: "./images/services/service-4.jpg",
     },
   ],
+
+  news: [
+    {
+      Date: "01 July 2024",
+      image: "./images/news/news-1.jpg",
+      title: "News 1",
+      description:
+        "This describes in short words the capability of this aircraft, of which we operate two since December 2007 and are getting two more in 2009.",
+    },
+    {
+      Date: "01 July 2024",
+      image: "./images/news/news-2.jpg",
+      title: "News 2",
+      description:
+        "This describes in short words the capability of this aircraft, of which we operate two since December 2007 and are getting two more in 2009.",
+    },
+    {
+      Date: "02 July 2024",
+      image: "./images/news/news-3.jpg",
+      title: "News 3",
+      description:
+        "This describes in short words the capability of this aircraft, of which we operate two since December 2007 and are getting two more in 2009.",
+    },
+    {
+      Date: "02 July 2024",
+      image: "./images/news/news-4.jpg",
+      title: "News 4",
+      description:
+        "This describes in short words the capability of this aircraft, of which we operate two since December 2007 and are getting two more in 2009.",
+    },
+  ],
 };

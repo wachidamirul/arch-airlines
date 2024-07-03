@@ -71,12 +71,13 @@
 
       <!-- Hero Section Start -->
       <section
-        class="flex h-[60vh] items-center bg-cover bg-center bg-no-repeat"
-        style="background-image: url(./images/sky.png)"
+        class="hero-overlay relative flex h-[70vh] items-center bg-[url('../images/sky.png')] bg-cover bg-center bg-no-repeat"
         id="hero"
       >
         <div class="container">
-          <div class="flex flex-wrap items-center justify-between">
+          <div
+            class="relative z-10 flex flex-wrap items-center justify-between"
+          >
             <div class="w-full self-center text-center lg:w-1/3 lg:text-left">
               <h2
                 class="text-2xl font-bold leading-[110%] tracking-[-0.96px] text-foreground md:text-3xl lg:text-4xl lg:leading-[115%] xl:text-5xl xl:leading-[120%]"
@@ -234,43 +235,45 @@
       <!-- Service Section End -->
 
       <!-- About Section End -->
-      <section class="relative mt-28 bg-primary">
-        <div class="container">
-          <div class="relative">
-            <div class="max-w-2xl py-20">
-              <h3
-                class="bottom-line text-4xl font-semibold text-white after:mt-4 after:w-14"
-              >
-                We provide flights to more than 6,800 destinations worldwide
-              </h3>
-              <p class="mt-4 leading-relaxed text-muted">
-                Welcome to Arch Airlanes, where convenience meets excellence.
-                Our array of services cater to every traveler's needs. From
-                seamless check-ins to personalized assistance through our
-                service, reliable Customer Relations, hassle-free Car Rentals,
-                swift Lost and Found assistance, and dedicated support for
-                passengers with limited mobility. Your journey starts here!
-              </p>
-              <div
-                class="mt-8 flex flex-row items-center justify-start gap-x-4"
-              >
-                <button
-                  class="shadow-xs cursor-pointer rounded-full border-2 border-destructive bg-destructive px-6 py-2 text-sm font-medium text-white transition-all duration-500 hover:bg-destructive/90"
+      <section class="relative mt-28">
+        <div class="bg-gradient-to-r from-primary via-[#0d4998] to-primary">
+          <div class="container">
+            <div class="relative">
+              <div class="max-w-2xl py-20">
+                <h3
+                  class="bottom-line text-4xl font-semibold text-white after:mt-4 after:w-14"
                 >
-                  Book Now
-                </button>
-                <button
-                  class="shadow-xs cursor-pointer rounded-full border-2 border-white bg-transparent px-6 py-2 text-sm font-medium text-white transition-all duration-500 hover:border-destructive/90"
+                  We provide flights to more than 6,800 destinations worldwide
+                </h3>
+                <p class="mt-4 leading-relaxed text-muted">
+                  Welcome to Arch Airlanes, where convenience meets excellence.
+                  Our array of services cater to every traveler's needs. From
+                  seamless check-ins to personalized assistance through our
+                  service, reliable Customer Relations, hassle-free Car Rentals,
+                  swift Lost and Found assistance, and dedicated support for
+                  passengers with limited mobility. Your journey starts here!
+                </p>
+                <div
+                  class="mt-8 flex flex-row items-center justify-start gap-x-4"
                 >
-                  Explore More
-                </button>
+                  <button
+                    class="shadow-xs cursor-pointer rounded-full border-2 border-destructive bg-destructive px-6 py-2 text-sm font-medium text-white transition-all duration-500 hover:bg-destructive/90"
+                  >
+                    Book Now
+                  </button>
+                  <button
+                    class="shadow-xs cursor-pointer rounded-full border-2 border-white bg-transparent px-6 py-2 text-sm font-medium text-white transition-all duration-500 hover:border-destructive/90"
+                  >
+                    Explore More
+                  </button>
+                </div>
               </div>
+              <img
+                class="absolute bottom-0 right-0 max-w-lg"
+                src="./images/people.png"
+                alt="Air Hostess"
+              />
             </div>
-            <img
-              class="absolute bottom-0 right-0 max-w-lg"
-              src="./images/people.png"
-              alt="Air Hostess"
-            />
           </div>
         </div>
       </section>
@@ -289,7 +292,7 @@
               class="col-span-3 size-full overflow-hidden rounded-md md:col-span-2"
             >
               <div
-                class="fleet-list relative h-48 min-w-full bg-[url('../images/fleet/fleet-1.jpg')] bg-cover bg-center bg-no-repeat md:h-80"
+                class="overlay-bg relative h-48 min-w-full bg-[url('../images/fleet/fleet-1.jpg')] bg-cover bg-center bg-no-repeat md:h-80"
               >
                 <div
                   class="service-item-content absolute bottom-2 left-2 z-10 max-w-96 space-y-2 p-4"
@@ -309,7 +312,7 @@
               class="col-span-3 size-full overflow-hidden rounded-md md:col-span-1"
             >
               <div
-                class="fleet-list before relative h-48 min-w-full bg-[url('../images/fleet/fleet-2.jpg')] bg-cover bg-center bg-no-repeat md:h-80"
+                class="overlay-bg before relative h-48 min-w-full bg-[url('../images/fleet/fleet-2.jpg')] bg-cover bg-center bg-no-repeat md:h-80"
               >
                 <div
                   class="service-item-content absolute bottom-2 left-2 z-10 max-w-96 space-y-2 p-4"
@@ -328,7 +331,7 @@
               class="col-span-3 size-full overflow-hidden rounded-md md:col-span-3"
             >
               <div
-                class="fleet-list relative h-48 min-w-full bg-[url('../images/fleet/fleet-3.jpg')] bg-cover bg-center bg-no-repeat md:h-96"
+                class="overlay-bg relative h-48 min-w-full bg-[url('../images/fleet/fleet-3.jpg')] bg-cover bg-center bg-no-repeat md:h-96"
               >
                 <div
                   class="service-item-content absolute bottom-2 left-2 z-10 max-w-96 space-y-2 p-4"
@@ -350,7 +353,7 @@
               class="col-span-3 size-full overflow-hidden rounded-md md:col-span-1"
             >
               <div
-                class="fleet-list relative h-48 min-w-full bg-[url('../images/fleet/fleet-4.jpg')] bg-cover bg-center bg-no-repeat md:h-80"
+                class="overlay-bg relative h-48 min-w-full bg-[url('../images/fleet/fleet-4.jpg')] bg-cover bg-center bg-no-repeat md:h-80"
               >
                 <div
                   class="service-item-content absolute bottom-2 left-2 z-10 max-w-96 space-y-2 p-4"
@@ -371,7 +374,7 @@
               class="col-span-3 size-full overflow-hidden rounded-md md:col-span-2"
             >
               <div
-                class="fleet-list relative h-48 min-w-full bg-[url('../images/fleet/fleet-5.jpg')] bg-cover bg-center bg-no-repeat md:h-80"
+                class="overlay-bg relative h-48 min-w-full bg-[url('../images/fleet/fleet-5.jpg')] bg-cover bg-center bg-no-repeat md:h-80"
               >
                 <div
                   class="service-item-content absolute bottom-2 left-2 z-10 max-w-96 space-y-2 p-4"
@@ -392,35 +395,129 @@
       </section>
       <!-- Fleets Section End -->
 
-      <!-- Footer Start -->
-      <footer class="mt-28 bg-primary py-12">
+      <!-- News Section Start -->
+      <section class="relative mt-28">
         <div class="container">
-          <div class="flex flex-col gap-x-16 gap-y-8 pb-8 lg:flex-row">
-            <div class="flex-1">
-              <div class="max-w-lg">
-                <h1 class="text-3xl font-bold leading-relaxed text-white">
+          <div class="flex flex-row items-center justify-between">
+            <h3
+              class="rounded-md border-l-4 border-primary px-6 py-1 text-2xl font-bold text-primary"
+            >
+              News Highlight
+            </h3>
+            <a href="#" class="text-sm font-medium text-primary"> More News </a>
+          </div>
+          <div class="mt-8 flex flex-row items-start gap-x-10">
+            <div class="basis-1/2">
+              <div
+                class="overlay-bg relative aspect-[16/9] overflow-hidden rounded-lg bg-[url('../images/news/news-1.jpg')] bg-cover bg-center bg-no-repeat shadow-md"
+              >
+                <div class="absolute bottom-2 z-10 w-full p-6">
+                  <p class="text-sm text-muted">1 July 2024</p>
+                  <h4 class="mt-2 font-bold leading-normal text-white">
+                    Garuda Indonesia Once Again Achieved The Title Of "The
+                    World's Best Cabin Crew" Skytrax In 2023
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="basis-1/2 space-y-8">
+              <div class="border-b border-border pb-4">
+                <p class="text-sm text-muted-foreground">1 July 2024</p>
+                <h4 class="mt-2 font-bold leading-normal">
+                  Garuda Indonesia Once Again Achieved The Title Of "The World's
+                  Best Cabin Crew" Skytrax In 2023
+                </h4>
+              </div>
+              <div class="border-b border-border pb-4">
+                <p class="text-sm text-muted-foreground">1 July 2024</p>
+                <h4 class="mt-2 font-bold leading-normal">
+                  Garuda Indonesia Once Again Achieved The Title Of "The World's
+                  Best Cabin Crew" Skytrax In 2023
+                </h4>
+              </div>
+              <div class="border-b border-border pb-4">
+                <p class="text-sm text-muted-foreground">1 July 2024</p>
+                <h4 class="mt-2 font-bold leading-normal">
+                  Garuda Indonesia Once Again Achieved The Title Of "The World's
+                  Best Cabin Crew" Skytrax In 2023
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- News Section End -->
+
+      <!-- Subscribe Section Start -->
+      <section class="relative mt-28">
+        <div class="container">
+          <div
+            class="relative z-10 flex flex-col items-center justify-center rounded-lg bg-gradient-to-r from-primary via-[#0d4998] to-primary px-6 pb-24 pt-16"
+          >
+            <div class="mx-auto max-w-2xl text-center">
+              <h3 class="mb-4 text-2xl font-semibold text-white md:text-3xl">
+                Subscribe to Our Newsletter
+              </h3>
+              <p class="text-sm font-normal text-muted">
+                Subscribe to our newsletter and stay up to date with the latest
+                news, updates, and exclusive offers. Get valuable insights. Join
+                our community today!
+              </p>
+              <div
+                class="absolute -bottom-14 left-0 right-0 mx-auto flex w-full max-w-2xl items-center gap-x-4 rounded-lg bg-card p-8 shadow-lg"
+              >
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="w-full rounded-lg bg-input px-4 py-3.5 text-base"
+                />
+                <button
+                  class="flex items-center rounded-lg bg-primary px-5 py-4 font-semibold text-white transition-all duration-500 ease-in-out hover:bg-primary/90"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Subscribe Section End -->
+
+      <!-- Footer Start -->
+      <footer class="pb-12 pt-32">
+        <div class="container">
+          <div
+            class="flex flex-col gap-x-10 gap-y-8 pb-8 lg:flex-row xl:gap-x-16"
+          >
+            <div class="xl:flex-1">
+              <div class="lg:max-w-sm xl:max-w-lg">
+                <h1 class="text-3xl font-bold leading-relaxed text-primary">
                   Arch Airlines
                 </h1>
-                <p class="mb-1 text-sm font-medium leading-relaxed text-muted">
+                <p
+                  class="mb-1 text-sm font-medium leading-relaxed text-secondary-foreground"
+                >
                   &copy; 2024 Arch Airlines. All Rights Reserved.
                 </p>
-                <p class="text-xs font-medium leading-relaxed text-muted">
+                <p
+                  class="text-xs font-medium leading-relaxed text-muted-foreground"
+                >
                   The Best Choice in Pioneer and Charter Flight Services All
                   Over Indonesia.
                 </p>
               </div>
             </div>
             <div
-              class="flex flex-1 flex-col justify-center gap-8 sm:flex-row sm:gap-16 lg:mx-0"
+              class="flex flex-1 flex-col justify-center gap-6 sm:flex-row sm:gap-16 lg:mx-0 xl:gap-8"
             >
               <div class="flex-1">
-                <div class="mb-2 text-base font-bold text-white">
+                <div class="mb-2 text-base font-bold text-secondary-foreground">
                   Arch Airlines
                 </div>
                 <ul class="flex flex-col gap-1" id="footer-nav"></ul>
               </div>
               <div class="flex-1">
-                <div class="mb-2 text-base font-bold text-white">
+                <div class="mb-2 text-base font-bold text-secondary-foreground">
                   Contact Us
                 </div>
                 <ul class="flex flex-col gap-1">
@@ -471,7 +568,9 @@
                 </ul>
               </div>
               <div class="flex-1">
-                <div class="mb-2 text-base font-bold text-white">Follow Us</div>
+                <div class="mb-2 text-base font-bold text-secondary-foreground">
+                  Follow Us
+                </div>
                 <ul class="flex items-center gap-4">
                   <li>
                     <a href="https://www.instagram.com/" target="_blank">
@@ -525,15 +624,15 @@
               </div>
             </div>
           </div>
-          <div class="w-full border-t border-border/10 pt-10">
+          <div class="w-full border-t border-border pt-10">
             <p
-              class="text-center text-xs font-medium leading-relaxed text-muted"
+              class="text-center text-xs font-medium leading-relaxed text-muted-foreground"
             >
               Dibuat dengan <span class="text-pink-500">❤️</span> oleh
               <a
                 href="https://github.com/wachidamirul/arch-airlines"
                 target="_blank"
-                class="font-bold text-white"
+                class="font-bold text-primary"
               >
                 Wachid Amirul M.
               </a>

@@ -78,11 +78,6 @@ const footerMenu = () => {
   });
 };
 
-const openDropdownNavbar = (brand) => {
-  const dropdownNavbar = document.getElementById(`dropdownNavbar-${brand}`);
-  dropdownNavbar.classList.toggle("hidden");
-};
-
 const formatCurrency = (number) => {
   return new Intl.NumberFormat("id-ID", {
     style: "currency",
