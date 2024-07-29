@@ -1,53 +1,57 @@
-# UJIAN TENGAH SEMESTER GENAP
+# Arch Airlines
 
-Matkul : Pemrograman Web 1 </br> Prodi : Teknik Informatika
+This website is designed for companies that provide aviation services, such as airplane charters, tourist flights, and cargo flights.
 
-## Table of contents
+You can access by visiting the following link: [Demo](https://wachidamirul.github.io/arch-airlines)
 
-- [Getting started](#getting-started)
-- [Demo](#demo)
+## Features
 
-## Getting started
+- Search and book flights
+- Manage their bookings
+- Track the status of their flights
+- Learn about the services the company offers
+- Contact the company for more information
 
-Website ini dirancang untuk perusahaan yang menyediakan jasa penerbangan, seperti charter pesawat, penerbangan wisata, dan penerbangan kargo. Website ini akan memungkinkan pelanggan untuk:
+## Setup and Running the Application
 
-- Mencari dan memesan penerbangan
-- Mengelola pemesanan mereka
-- Melacak status penerbangan mereka
-- Mempelajari tentang layanan yang ditawarkan perusahaan
-- Menghubungi perusahaan untuk informasi lebih lanjut
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/wachidamirul/arch-airlines
+   ```
+2. Navigate to the project directory:
+   ```sh
+   pnpm install
+   pnpm watch
+   ```
+3. Running with http-server:
+   ```sh
+   pnpm start
+   ```
+4. Build:
+   ```sh
+   pnpm build
+   ```
 
-### Installation
+## Technologies Used
 
-```shell
-pnpm install
-pnpm watch
-```
+- HTML
+- CSS (Tailwindcss)
+- JavaScript
 
-### Build
+## Acknowledgments
 
-```shell
-pnpm build
-```
+Special thanks to the open-source community for providing libraries and resources that made this project possible.
 
-### Configuration after build
+## License
 
-Change **_global.css_** with **_style.css_**
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
-```html
-<!-- Before -->
-<link href="./css/global.css" rel="stylesheet" />
+## Contact
 
-<!-- After -->
-<link href="./css/style.css" rel="stylesheet" />
-```
+If you have any questions or feedback, feel free to contact us at [contact@wachidamirul.com](mailto:contact@wachidamirul.com).
 
-### Running with http server
+Thank you for using the Age Calculator!
 
-```shell
-pnpm start
-```
+---
 
-## Demo
-
-### [DEMO](https://wachidamirul.github.io/arch-airlines/)
+© 2024 Wachid Amirul

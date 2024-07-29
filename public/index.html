@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link href="./css/global.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
   </head>
   <body>
     <main class="bg-white font-inter antialiased">
@@ -33,10 +33,10 @@
 
             <div class="hidden md:flex md:items-center">
               <a
-                href="./contact-us.html"
+                href="./login.html"
                 class="shadow-xs cursor-pointer rounded-full bg-primary px-6 py-2 text-sm font-medium text-white transition-all duration-500 hover:bg-primary/90"
               >
-                Contact Us
+                Login
               </a>
             </div>
 
@@ -239,7 +239,7 @@
         <div class="bg-gradient-to-r from-primary via-[#0d4998] to-primary">
           <div class="container">
             <div class="relative">
-              <div class="max-w-2xl py-20">
+              <div class="w-full py-20 xl:max-w-2xl">
                 <h3
                   class="bottom-line text-4xl font-semibold text-white after:mt-4 after:w-14"
                 >
@@ -269,7 +269,7 @@
                 </div>
               </div>
               <img
-                class="absolute bottom-0 right-0 max-w-lg"
+                class="absolute bottom-0 right-0 hidden max-w-lg xl:block"
                 src="./images/people.png"
                 alt="Air Hostess"
               />
@@ -406,8 +406,8 @@
             </h3>
             <a href="#" class="text-sm font-medium text-primary"> More News </a>
           </div>
-          <div class="mt-8 flex flex-row items-start gap-x-10">
-            <div class="basis-1/2">
+          <div class="mt-8 flex flex-col items-start gap-x-10 lg:flex-row">
+            <div class="mb-10 w-full">
               <div
                 class="overlay-bg relative aspect-[16/9] overflow-hidden rounded-lg bg-[url('../images/news/news-1.jpg')] bg-cover bg-center bg-no-repeat shadow-md"
               >
@@ -420,7 +420,7 @@
                 </div>
               </div>
             </div>
-            <div class="basis-1/2 space-y-8">
+            <div class="w-full space-y-8">
               <div class="border-b border-border pb-4">
                 <p class="text-sm text-muted-foreground">1 July 2024</p>
                 <h4 class="mt-2 font-bold leading-normal">
@@ -464,7 +464,7 @@
                 our community today!
               </p>
               <div
-                class="absolute -bottom-14 left-0 right-0 mx-auto flex w-full max-w-2xl items-center gap-x-4 rounded-lg bg-card p-8 shadow-lg"
+                class="absolute -bottom-32 left-0 right-0 mx-auto flex w-full max-w-2xl flex-col items-center gap-x-4 gap-y-4 rounded-lg bg-card p-8 shadow-lg md:-bottom-14 md:flex-row"
               >
                 <input
                   type="email"
@@ -634,7 +634,7 @@
                 target="_blank"
                 class="font-bold text-primary"
               >
-                Wachid Amirul M.
+                Wachid Amirul Muslim.
               </a>
             </p>
           </div>

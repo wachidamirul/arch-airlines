@@ -5,24 +5,23 @@
   "main": "index.js",
   "scripts": {
     "start": "http-server ./public -p 9000",
-    "watch": "pnpm dlx tailwindcss -i ./src/css/input.css -o ./public/css/global.css --watch",
-    "build": "pnpm dlx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --minify"
+    "watch": "pnpm dlx tailwindcss -i ./dist/css/input.css -o ./public/css/style.css --watch",
+    "build": "pnpm dlx tailwindcss -i ./dist/css/input.css -o ./public/css/style.css --minify"
   },
   "keywords": [],
   "author": "wachidamirul",
+  "homepage": "https://wachidamirul.github.io/arch-airlines",
   "repository": {
     "type": "github",
     "url": "https://github.com/wachidamirul/arch-airlines"
   },
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "@tailwindcss/aspect-ratio": "^0.4.2",
-    "@tailwindcss/line-clamp": "^0.4.4",
     "autoprefixer": "^10.4.19",
     "http-server": "^14.1.1",
-    "postcss": "^8.4.38",
-    "prettier": "^3.3.2",
-    "prettier-plugin-tailwindcss": "^0.6.4",
-    "tailwindcss": "^3.4.4"
+    "postcss": "^8.4.39",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.6"
   }
 }

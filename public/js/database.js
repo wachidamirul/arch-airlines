@@ -34,7 +34,7 @@ const database = {
       ],
     },
     { parent: "News", slug: "./news.html", child: [] },
-    { parent: "FAQs", slug: "./faqs.html", child: [] },
+    { parent: "Contact Us", slug: "./contact-us.html", child: [] },
   ],
 
   bandara: [
