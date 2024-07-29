@@ -93,4 +93,13 @@ const formatDecimal = (number) => {
   }).format(number);
 };
 
-const globalUrl = window.location.origin + "arch-airlines";
+const getGlobalUrl = () => {
+  const globalUrl = window.location.origin;
+  if (globalUrl == "https://wachidamirul.github.io") {
+    return globalUrl + "/arch-airlines";
+  }
+  if (globalUrl == "file://") {
+    return "../public";
+  }
+  return globalUrl;
+};
