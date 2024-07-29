@@ -93,23 +93,23 @@ const database = {
 
   promotion: [
     {
-      image: "./images/promo/promo-1.jpg",
+      image: "promo-1.jpg",
       text: "Promo 1",
     },
     {
-      image: "./images/promo/promo-2.jpg",
+      image: "promo-2.jpg",
       text: "Promo 2",
     },
     {
-      image: "./images/promo/promo-3.jpg",
+      image: "promo-3.jpg",
       text: "Promo 3",
     },
     {
-      image: "./images/promo/promo-4.jpg",
+      image: "promo-4.jpg",
       text: "Promo 4",
     },
     {
-      image: "./images/promo/promo-5.jpg",
+      image: "promo-5.jpg",
       text: "Promo 5",
     },
   ],
@@ -117,50 +117,52 @@ const database = {
   service: [
     {
       title: "First Class",
-      image: "./images/services/service-1.jpg",
+      image: "service-1.jpg",
     },
     {
       title: "Bussiness Class",
-      image: "./images/services/service-2.jpg",
+      image: "service-2.jpg",
     },
     {
       title: "Premium Class",
-      image: "./images/services/service-3.jpg",
+      image: "service-3.jpg",
     },
     {
       title: "Economy Class",
-      image: "./images/services/service-4.jpg",
+      image: "service-4.jpg",
     },
   ],
 
   news: [
     {
-      Date: "01 July 2024",
-      image: "./images/news/news-1.jpg",
-      title: "News 1",
-      description:
-        "This describes in short words the capability of this aircraft, of which we operate two since December 2007 and are getting two more in 2009.",
+      date: "26 July 2024",
+      image: "news-1.jpg",
+      title: `Arch Airline Once Again Achieved The Title Of "The World's Best Cabin Crew" Skytrax In 2023`,
     },
     {
-      Date: "01 July 2024",
-      image: "./images/news/news-2.jpg",
-      title: "News 2",
-      description:
-        "This describes in short words the capability of this aircraft, of which we operate two since December 2007 and are getting two more in 2009.",
+      date: "10 July 2024",
+      image: "news-2.jpg",
+      title: `Arch Airline in-flight meals pre-ordering service now available across all German gateways`,
     },
     {
-      Date: "02 July 2024",
-      image: "./images/news/news-3.jpg",
-      title: "News 3",
-      description:
-        "This describes in short words the capability of this aircraft, of which we operate two since December 2007 and are getting two more in 2009.",
+      date: "1 July 2024",
+      image: "news-3.png",
+      title: `Arch Airline unveils first destinations to be served with refurbished Boeing 777`,
     },
     {
-      Date: "02 July 2024",
-      image: "./images/news/news-4.jpg",
-      title: "News 4",
-      description:
-        "This describes in short words the capability of this aircraft, of which we operate two since December 2007 and are getting two more in 2009.",
+      date: "12 June 2024",
+      image: "news-4.jpg",
+      title: `Arch Airline celebrates one year of Premium Economy in Singapore`,
+    },
+    {
+      date: "07 June 2024",
+      image: "news-5.jpg",
+      title: `Arch Airline highlights the importance of punctuality at the airport for travel this summer`,
+    },
+    {
+      date: "02 June 2024",
+      image: "news-6.jpg",
+      title: `Arch Airline to fly to Madagascar via the Seychelles`,
     },
   ],
 

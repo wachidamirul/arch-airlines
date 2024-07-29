@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   getBandara();
   promoSlider();
   services();
+  news();
 });
 
 const getBandara = () => {
@@ -32,7 +33,7 @@ const promoSlider = () => {
   data.map((item) => {
     const slide = document.createElement("img");
     slide.classList.add("h-fit", "min-w-full", "slide");
-    slide.src = item.image;
+    slide.src = globalUrl + "/images/promo/" + item.image;
     slide.alt = item.text;
     slides.appendChild(slide);
   });
@@ -69,6 +70,22 @@ const services = () => {
   const service = document.getElementById("service-list");
 
   serviceList.map((item) => {
-    service.innerHTML += `<div class="relative bg-card rounded-lg bg-center bg-cover bg-no-repeat border min-h-[320px] size-full"style=background-image:url('${item.image}')><div class="relative pt-6 px-6 text-center z-10"><span class="font-light text-muted-foreground text-xs tracking-[0.2em] uppercase">Cabin Features</span><h3 class="after:mx-auto bottom-line font-semibold mt-2 text-lg tracking-wider">${item.title}</h3></div></div>`;
+    service.innerHTML += `<div class="relative bg-card rounded-lg bg-center bg-cover bg-no-repeat border min-h-[320px] size-full" style=background-image:url('${globalUrl}/images/services/${item.image}')><div class="relative pt-6 px-6 text-center z-10"><span class="font-light text-muted-foreground text-xs tracking-[0.2em] uppercase">Cabin Features</span><h3 class="after:mx-auto bottom-line font-semibold mt-2 text-lg tracking-wider">${item.title}</h3></div></div>`;
+  });
+};
+
+const news = () => {
+  const newsList = database.news;
+  const newsLast = document.getElementById("last-news");
+  const otherNews = document.getElementById("other-news");
+
+  newsList.map((item, index) => {
+    if (index === 0) {
+      newsLast.innerHTML += `<div class="overlay-bg relative aspect-[16/9] cursor-pointer overflow-hidden rounded-lg bg-cover bg-center bg-no-repeat shadow-md" style="background-image:url('${globalUrl}/images/news/${item.image}')"><div class="absolute bottom-2 z-10 w-full p-6"><p class="text-sm text-muted">${item.date}</p><h4 class="mt-2 font-bold leading-normal text-white hover:underline">${item.title}</h4></div></div>`;
+    }
+
+    if (index > 0 && index < 4) {
+      otherNews.innerHTML += `<div class="cursor-pointer border-b border-border pb-4"><p class="text-sm text-muted-foreground">${item.date}</p><h4 class="mt-2 font-bold leading-normal hover:underline">${item.title}</h4></div>`;
+    }
   });
 };

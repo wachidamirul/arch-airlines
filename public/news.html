@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us | Arch Airlines</title>
+    <title>News | Arch Airlines</title>
     <meta name="Description" content="LapakMotor" />
     <link rel="icon" type="image/png" href="./images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -82,13 +82,13 @@
               <h2
                 class="text-2xl font-bold leading-[110%] tracking-[-0.96px] text-foreground md:text-3xl lg:text-4xl lg:leading-[115%] xl:text-5xl xl:leading-[120%]"
               >
-                About us
+                Media Centre
               </h2>
               <p
                 class="mt-2 text-sm text-muted-foreground md:text-base lg:mt-3 lg:text-foreground xl:text-lg"
               >
-                Learn more about our history, our business and sustainability
-                initiatives.
+                Our News contains all of our business updates, including the
+                latest press releases and articles and our contact details.
               </p>
             </div>
           </div>
@@ -96,13 +96,43 @@
       </section>
       <!-- Hero Section End -->
 
-      <!-- About Section Start -->
-      <section class="container mt-16 space-y-4">
-        <h2 class="text-3xl font-bold leading-relaxed" id="title"></h2>
-        <article class="space-y-4 text-justify" id="article"></article>
-        <div class="space-y-4 pt-10" id="list-article"></div>
+      <!-- News Section Start -->
+      <section class="container mt-16">
+        <form class="flex items-center justify-center">
+          <input
+            class="w-full rounded-bl-lg rounded-tl-lg bg-input px-4 py-3.5 text-base focus:outline-none active:outline-none"
+            type="text"
+            name="search"
+            placeholder="Search in our news"
+            id="search"
+          />
+          <button
+            class="rounded-br-lg rounded-tr-lg bg-primary px-4 py-3.5 transition-all duration-300 ease-in-out hover:bg-primary/90"
+            type="button"
+            id="search-btn"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="text-white"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </button>
+        </form>
+        <div class="mt-20 grid grid-cols-3 gap-6" id="news-list"></div>
+        <div class="hidden w-full text-center" id="no-news">
+          <p class="text-base text-muted-foreground">
+            Sorry, your search returned zero results
+          </p>
+        </div>
       </section>
-      <!-- About Section End -->
+      <!-- News Section End -->
 
       <!-- Subscribe Section Start -->
       <section class="relative mt-28">
@@ -300,6 +330,6 @@
     </main>
     <script type="text/javascript" src="./js/database.js"></script>
     <script type="text/javascript" src="./js/global.js"></script>
-    <script type="text/javascript" src="./js/about-us.js"></script>
+    <script type="text/javascript" src="./js/news.js"></script>
   </body>
 </html>

@@ -92,3 +92,5 @@ const formatDecimal = (number) => {
     minimumFractionDigits: 0,
   }).format(number);
 };
+
+const globalUrl = window.location.origin;

@@ -837,6 +837,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-28 {
   margin-top: 7rem;
 }
@@ -946,6 +950,10 @@ video {
 
 .max-w-lg {
   max-width: 32rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
 }
 
 .flex-1 {
@@ -1091,6 +1099,10 @@ video {
   gap: 1.5rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .gap-x-10 {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
@@ -1163,6 +1175,22 @@ video {
 .rounded-t-xl {
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
+}
+
+.rounded-bl-lg {
+  border-bottom-left-radius: 0.5rem;
+}
+
+.rounded-br-lg {
+  border-bottom-right-radius: 0.5rem;
+}
+
+.rounded-tl-lg {
+  border-top-left-radius: 0.5rem;
+}
+
+.rounded-tr-lg {
+  border-top-right-radius: 0.5rem;
 }
 
 .border {
@@ -1252,10 +1280,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/images\/about\.jpg\'\)\] {
-  background-image: url('../images/about.jpg');
-}
-
 .bg-\[url\(\'\.\.\/images\/fleet\/fleet-1\.jpg\'\)\] {
   background-image: url('../images/fleet/fleet-1.jpg');
 }
@@ -1276,8 +1300,8 @@ video {
   background-image: url('../images/fleet/fleet-5.jpg');
 }
 
-.bg-\[url\(\'\.\.\/images\/news\/news-1\.jpg\'\)\] {
-  background-image: url('../images/news/news-1.jpg');
+.bg-\[url\(\'\.\.\/images\/news\/\$\{item\.image\}\'\)\] {
+  background-image: url('../images/news/${item.image}');
 }
 
 .bg-\[url\(\'\.\.\/images\/sky\.png\'\)\] {
@@ -1286,6 +1310,18 @@ video {
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\$\{globalUrl\}\/\$\{item\.image\}\'\)\] {
+  background-image: url('${globalUrl}/${item.image}');
+}
+
+.bg-\[url\(\'\$\{globalUrl\}\/images\/news\/\$\{item\.image\}\'\)\] {
+  background-image: url('${globalUrl}/images/news/${item.image}');
+}
+
+.bg-\[url\(\$\{globalUrl\}\/images\/news\/\$\{item\.image\}\)\] {
+  background-image: url(${globalUrl}/images/news/${item.image});
 }
 
 .from-primary {
@@ -1309,10 +1345,6 @@ video {
 
 .bg-center {
   background-position: center;
-}
-
-.bg-top {
-  background-position: top;
 }
 
 .bg-no-repeat {
@@ -1439,10 +1471,6 @@ video {
 
 .pt-32 {
   padding-top: 8rem;
-}
-
-.pt-36 {
-  padding-top: 9rem;
 }
 
 .pt-6 {
@@ -1764,8 +1792,17 @@ select {
   color: hsl(var(--primary) / var(--tw-text-opacity));
 }
 
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
 .focus\:bg-transparent:focus {
   background-color: transparent;
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .focus\:outline-ring:focus {
@@ -1775,6 +1812,11 @@ select {
 .focus\:ring-primary:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: hsl(var(--primary) / var(--tw-ring-opacity));
+}
+
+.active\:outline-none:active {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .group:hover .group-hover\:text-primary {
