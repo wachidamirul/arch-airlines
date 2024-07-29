@@ -93,4 +93,4 @@ const formatDecimal = (number) => {
   }).format(number);
 };
 
-const globalUrl = window.location.origin;
+const globalUrl = window.location.origin + "arch-airlines";
