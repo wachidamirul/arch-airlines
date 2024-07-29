@@ -728,8 +728,8 @@ video {
   position: relative;
 }
 
-.-bottom-14 {
-  bottom: -3.5rem;
+.-bottom-32 {
+  bottom: -8rem;
 }
 
 .bottom-0 {
@@ -770,18 +770,6 @@ video {
 
 .top-\[60px\] {
   top: 60px;
-}
-
-.-bottom-28 {
-  bottom: -7rem;
-}
-
-.-bottom-40 {
-  bottom: -10rem;
-}
-
-.-bottom-32 {
-  bottom: -8rem;
 }
 
 .z-10 {
@@ -841,6 +829,10 @@ video {
   margin-left: auto;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -855,10 +847,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
 }
 
 .block {
@@ -899,6 +887,10 @@ video {
   height: 12rem;
 }
 
+.h-\[50vh\] {
+  height: 50vh;
+}
+
 .h-\[70vh\] {
   height: 70vh;
 }
@@ -914,10 +906,6 @@ video {
 
 .max-h-screen {
   max-height: 100vh;
-}
-
-.min-h-\[302px\] {
-  min-height: 302px;
 }
 
 .min-h-\[320px\] {
@@ -964,16 +952,8 @@ video {
   flex: 1 1 0%;
 }
 
-.basis-1\/2 {
-  flex-basis: 50%;
-}
-
 .basis-1\/5 {
   flex-basis: 20%;
-}
-
-.basis-1 {
-  flex-basis: 0.25rem;
 }
 
 .origin-bottom-left {
@@ -1126,12 +1106,12 @@ video {
        column-gap: 1.5rem;
 }
 
-.gap-y-8 {
-  row-gap: 2rem;
-}
-
 .gap-y-4 {
   row-gap: 1rem;
+}
+
+.gap-y-8 {
+  row-gap: 2rem;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1272,6 +1252,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\.\/images\/about\.jpg\'\)\] {
+  background-image: url('../images/about.jpg');
+}
+
 .bg-\[url\(\'\.\.\/images\/fleet\/fleet-1\.jpg\'\)\] {
   background-image: url('../images/fleet/fleet-1.jpg');
 }
@@ -1327,6 +1311,10 @@ video {
   background-position: center;
 }
 
+.bg-top {
+  background-position: top;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -1350,6 +1338,11 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .px-4 {
@@ -1407,6 +1400,11 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -1459,6 +1457,10 @@ video {
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .font-inter {
   font-family: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -1493,6 +1495,11 @@ video {
   line-height: 1.25rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -1520,6 +1527,10 @@ video {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .leading-\[110\%\] {
@@ -1740,6 +1751,10 @@ select {
   background-color: hsl(var(--muted) / var(--tw-bg-opacity));
 }
 
+.hover\:bg-primary\/5:hover {
+  background-color: hsl(var(--primary) / 0.05);
+}
+
 .hover\:bg-primary\/90:hover {
   background-color: hsl(var(--primary) / 0.9);
 }
@@ -1879,10 +1894,6 @@ select {
     max-width: 24rem;
   }
 
-  .lg\:basis-1\/2 {
-    flex-basis: 50%;
-  }
-
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1915,12 +1926,12 @@ select {
     display: block;
   }
 
-  .xl\:max-w-lg {
-    max-width: 32rem;
-  }
-
   .xl\:max-w-2xl {
     max-width: 42rem;
+  }
+
+  .xl\:max-w-lg {
+    max-width: 32rem;
   }
 
   .xl\:flex-1 {

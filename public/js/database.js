@@ -163,4 +163,19 @@ const database = {
         "This describes in short words the capability of this aircraft, of which we operate two since December 2007 and are getting two more in 2009.",
     },
   ],
+
+  about: [
+    {
+      title: "Company Profile",
+      description:
+        "Indonesia's commercial aviation history began when Indonesian people was in struggle to defend their independence.",
+      article: `<p>Presenting a new level of service excellence in air travel, Arch Airlanes, the national flag carrier of Indonesia, seamlessly connects more than 90 destinations worldwide to not only one of the largest economies in Southeast Asia, but also an array of exotic destinations in the beautiful archipelago of Indonesia all at once. With more than 600 daily flights, Arch Airlanes proudly serves its passengers with the award-winning "Arch Airlanes Experience" service, which highlights the warm Indonesian Hospitality and rich diverse culture.</p><p>Arch Airlanes group currently operates 202 aircraft with an average age less than five years. This amount is accommodated by Arch Airlanes as a main brand with a total of 144 aircraft, and Citilink as a Low Cost Carrier Airline which operates 58 fleet aircraft.</p><p>The airline continuously strives through its ongoing transformation program to provide better and even more convenient services. The achievement of Arch Airlanes's transformation program can be seen from global recognition a Skytrax's 5-star airline rating since 2014, ranked as Top 10 Worlds Best airline in the world, as well as winning the prestigious “The World's Best Cabin Crew” award fpr five consecutive years from 2014.</p><p>To complement the Skytrax Awards, Arch Airlanes also awarded the "5-Stars Airline" recognition from the Airline Passenger Experience Association (APEX), a non-profit association for enhanced passenger flight experience based in New York, USA.</p>`,
+    },
+    {
+      title: "Company Vision & Mission",
+      description:
+        "Providing the highest value to customers through excellent Indonesian hospitality.",
+      article: `<p class="text-xl font-bold">Company Vision</p><p class="italic">"TO BECOME A SUSTAINABLE AVIATION GROUP BY CONNECTING INDONESIA AND BEYOND WHILE DELIVERING INDONESIAN HOSPITALITY"</p><p class="text-xl font-bold">Company Mission</p><p class="italic">"STRENGTHENING BUSINESS FUNDAMENTAL THROUGH STRONG REVENUE GROWTH, COST LEADERSHIP IMPLEMENTATION, ORGANIZATION EFFECTIVENESS AND GROUP SYNERGY REINFORCEMENT WHILE FOCUSING ON HIGH STANDARD OF SAFETY AND CUSTOMER-ORIENTED SERVICES DELIVERED BY PROFESSIONAL & PASSIONATE EMPLOYEES"</p>`,
+    },
+  ],
 };

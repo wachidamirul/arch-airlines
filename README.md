@@ -23,7 +23,7 @@ You can access by visiting the following link: [Demo](https://wachidamirul.githu
    pnpm install
    pnpm watch
    ```
-3. Running with http-server:
+3. Running with **_http-server_**:
    ```sh
    pnpm start
    ```
@@ -42,15 +42,13 @@ You can access by visiting the following link: [Demo](https://wachidamirul.githu
 
 Special thanks to the open-source community for providing libraries and resources that made this project possible.
 
-## License
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
-
 ## Contact
 
 If you have any questions or feedback, feel free to contact us at [contact@wachidamirul.com](mailto:contact@wachidamirul.com).
 
-Thank you for using the Age Calculator!
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ---
 

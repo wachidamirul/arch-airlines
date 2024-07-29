@@ -33,10 +33,10 @@
 
             <div class="hidden md:flex md:items-center">
               <a
-                href="./contact-us.html"
+                href="./login.html"
                 class="shadow-xs cursor-pointer rounded-full bg-primary px-6 py-2 text-sm font-medium text-white transition-all duration-500 hover:bg-primary/90"
               >
-                Contact Us
+                Login
               </a>
             </div>
 
@@ -69,9 +69,18 @@
       </header>
       <!-- Header Section End -->
 
+      <!-- Hero Section Start -->
+      <section
+        class="hero-overlay relative flex h-[70vh] items-center bg-[url('../images/about.jpg')] bg-cover bg-top bg-no-repeat"
+        id="hero"
+      ></section>
+      <!-- Hero Section End -->
+
       <!-- About Section Start -->
-      <section class="pt-36" id="kontak">
-        <div class="container"></div>
+      <section class="container mt-16 space-y-4">
+        <h2 class="text-3xl font-bold leading-relaxed" id="title"></h2>
+        <article class="space-y-4 text-justify" id="article"></article>
+        <div class="space-y-4 pt-10" id="list-article"></div>
       </section>
       <!-- About Section End -->
 
@@ -91,7 +100,7 @@
                 our community today!
               </p>
               <div
-                class="absolute -bottom-14 left-0 right-0 mx-auto flex w-full max-w-2xl items-center gap-x-4 rounded-lg bg-card p-8 shadow-lg"
+                class="absolute -bottom-32 left-0 right-0 mx-auto flex w-full max-w-2xl flex-col items-center gap-x-4 gap-y-4 rounded-lg bg-card p-8 shadow-lg md:-bottom-14 md:flex-row"
               >
                 <input
                   type="email"
@@ -261,7 +270,7 @@
                 target="_blank"
                 class="font-bold text-primary"
               >
-                Wachid Amirul M.
+                Wachid Amirul Muslim.
               </a>
             </p>
           </div>
@@ -271,5 +280,6 @@
     </main>
     <script type="text/javascript" src="./js/database.js"></script>
     <script type="text/javascript" src="./js/global.js"></script>
+    <script type="text/javascript" src="./js/about-us.js"></script>
   </body>
 </html>
