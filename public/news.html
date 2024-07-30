@@ -80,7 +80,7 @@
           >
             <div class="mx-auto w-full max-w-xl self-center text-center">
               <h2
-                class="text-2xl font-bold leading-[110%] tracking-[-0.96px] text-foreground md:text-3xl lg:text-4xl lg:leading-[115%] xl:text-5xl xl:leading-[120%]"
+                class="text-2xl font-bold leading-[110%] tracking-[-0.96px] text-primary md:text-3xl lg:text-4xl lg:leading-[115%] xl:text-5xl xl:leading-[120%]"
               >
                 Media Centre
               </h2>
@@ -97,7 +97,7 @@
       <!-- Hero Section End -->
 
       <!-- News Section Start -->
-      <section class="container mt-16">
+      <section class="container mt-8">
         <form class="flex items-center justify-center">
           <input
             class="w-full rounded-bl-lg rounded-tl-lg bg-input px-4 py-3.5 text-base focus:outline-none active:outline-none"
@@ -125,7 +125,10 @@
             </svg>
           </button>
         </form>
-        <div class="mt-20 grid grid-cols-3 gap-6" id="news-list"></div>
+        <div
+          class="mt-20 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+          id="news-list"
+        ></div>
         <div class="hidden w-full text-center" id="no-news">
           <p class="text-base text-muted-foreground">
             Sorry, your search returned zero results

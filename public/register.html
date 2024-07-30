@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us | Arch Airlines</title>
+    <title>Register | Arch Airlines</title>
     <meta name="Description" content="LapakMotor" />
     <link rel="icon" type="image/png" href="./images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -82,13 +82,13 @@
               <h2
                 class="text-2xl font-bold leading-[110%] tracking-[-0.96px] text-primary md:text-3xl lg:text-4xl lg:leading-[115%] xl:text-5xl xl:leading-[120%]"
               >
-                About us
+                Join Arch Skywards
               </h2>
               <p
                 class="mt-2 text-sm text-muted-foreground md:text-base lg:mt-3 lg:text-foreground xl:text-lg"
               >
-                Learn more about our history, our business and sustainability
-                initiatives.
+                Open up a world of rewards every time you travel. Enjoy reward
+                flights, upgrades, exclusive benefits and more.
               </p>
             </div>
           </div>
@@ -96,48 +96,210 @@
       </section>
       <!-- Hero Section End -->
 
-      <!-- About Section Start -->
-      <section class="container mt-8 space-y-4">
-        <h2 class="text-3xl font-bold leading-relaxed" id="title"></h2>
-        <article class="space-y-4 text-justify" id="article"></article>
-        <div class="space-y-4 pt-10" id="list-article"></div>
-      </section>
-      <!-- About Section End -->
-
-      <!-- Subscribe Section Start -->
-      <section class="relative mt-28">
-        <div class="container">
-          <div
-            class="relative z-10 flex flex-col items-center justify-center rounded-lg bg-gradient-to-r from-primary via-[#0d4998] to-primary px-6 pb-24 pt-16"
-          >
-            <div class="mx-auto max-w-2xl text-center">
-              <h3 class="mb-4 text-2xl font-semibold text-white md:text-3xl">
-                Subscribe to Our Newsletter
-              </h3>
-              <p class="text-sm font-normal text-muted">
-                Subscribe to our newsletter and stay up to date with the latest
-                news, updates, and exclusive offers. Get valuable insights. Join
-                our community today!
-              </p>
-              <div
-                class="absolute -bottom-32 left-0 right-0 mx-auto flex w-full max-w-2xl flex-col items-center gap-x-4 gap-y-4 rounded-lg bg-card p-8 shadow-lg md:-bottom-14 md:flex-row"
-              >
+      <!-- Register Section Start -->
+      <section class="container mt-8">
+        <div class="mx-auto max-w-xl">
+          <h4 class="mb-4 text-2xl font-bold text-primary">Register</h4>
+          <form class="space-y-6">
+            <div class="flex items-center justify-center gap-6">
+              <div class="w-full">
+                <label
+                  for="first-name"
+                  class="block text-sm font-medium leading-6 text-gray-900"
+                  >First Name</label
+                >
                 <input
-                  type="email"
-                  placeholder="Enter your email"
-                  class="w-full rounded-lg bg-input px-4 py-3.5 text-base"
+                  type="text"
+                  placeholder="First name"
+                  name="first-name"
+                  id="first-name"
+                  autocomplete="first-name"
+                  required
+                  class="mt-2 w-full rounded-md bg-secondary px-4 py-3 text-sm text-muted-foreground outline-primary focus:bg-transparent"
+                />
+              </div>
+              <div class="w-full">
+                <label
+                  for="last-name"
+                  class="block text-sm font-medium leading-6 text-gray-900"
+                  >Last Name</label
+                >
+                <input
+                  type="text"
+                  placeholder="last name"
+                  name="last-name"
+                  id="last-name"
+                  autocomplete="last-name"
+                  required
+                  class="mt-2 w-full rounded-md bg-secondary px-4 py-3 text-sm text-muted-foreground outline-primary focus:bg-transparent"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label
+                for="email"
+                class="block text-sm font-medium leading-6 text-gray-900"
+                >Email address</label
+              >
+              <input
+                type="email"
+                placeholder="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+                required
+                class="mt-2 w-full rounded-md bg-secondary px-4 py-3 text-sm text-muted-foreground outline-primary focus:bg-transparent"
+              />
+            </div>
+
+            <div class="w-full">
+              <label
+                for="password"
+                class="block text-sm font-medium leading-6 text-gray-900"
+              >
+                Password
+              </label>
+
+              <div class="relative flex items-center">
+                <input
+                  type="password"
+                  placeholder="password"
+                  name="password"
+                  id="password"
+                  autocomplete="current-password"
+                  required
+                  class="mt-2 w-full rounded-md bg-secondary px-4 py-3 text-sm text-muted-foreground outline-primary focus:bg-transparent"
                 />
                 <button
-                  class="flex items-center rounded-lg bg-primary px-5 py-4 font-semibold text-white transition-all duration-500 ease-in-out hover:bg-primary/90"
+                  type="button"
+                  class="absolute right-0 mt-2 flex items-center justify-center rounded-br-lg rounded-tr-lg bg-primary px-4 py-3 text-white"
+                  onclick="togglePasswordVisibility(`password`)"
                 >
-                  Subscribe
+                  <svg
+                    id="eye-icon-closed-password"
+                    class="size-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"
+                    ></path>
+                  </svg>
+
+                  <svg
+                    id="eye-icon-open-password"
+                    class="hidden size-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                    ></path>
+                  </svg>
                 </button>
               </div>
             </div>
-          </div>
+
+            <div class="w-full">
+              <label
+                for="confrim-password"
+                class="block text-sm font-medium leading-6 text-gray-900"
+              >
+                Confrim Password
+              </label>
+
+              <div class="relative flex items-center">
+                <input
+                  type="password"
+                  placeholder="confrim password"
+                  name="confrim-password"
+                  id="confrim-password"
+                  autocomplete="current-password"
+                  required
+                  class="mt-2 w-full rounded-md bg-secondary px-4 py-3 text-sm text-muted-foreground outline-primary focus:bg-transparent"
+                />
+                <button
+                  type="button"
+                  class="absolute right-0 mt-2 flex items-center justify-center rounded-br-lg rounded-tr-lg bg-primary px-4 py-3 text-white"
+                  onclick="togglePasswordVisibility(`confrim-password`)"
+                >
+                  <svg
+                    id="eye-icon-closed-confrim-password"
+                    class="size-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"
+                    ></path>
+                  </svg>
+
+                  <svg
+                    id="eye-icon-open-confrim-password"
+                    class="hidden size-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              class="!mt-6 w-full rounded-md bg-primary px-4 py-3 text-sm font-semibold tracking-wide text-background transition-all duration-300 ease-in-out hover:bg-primary/90"
+            >
+              Register
+            </button>
+
+            <div class="text-sm">
+              Have an account?
+              <a
+                href="./login.html"
+                class="font-semibold text-primary hover:text-primary/90"
+                >Login</a
+              >
+            </div>
+          </form>
         </div>
       </section>
-      <!-- Subscribe Section End -->
+      <!-- Register Section End -->
 
       <!-- Footer Start -->
       <footer class="pb-12 pt-32">
@@ -300,6 +462,6 @@
     </main>
     <script type="text/javascript" src="./js/database.js"></script>
     <script type="text/javascript" src="./js/global.js"></script>
-    <script type="text/javascript" src="./js/about-us.js"></script>
+    <script type="text/javascript" src="./js/register.js"></script>
   </body>
 </html>
