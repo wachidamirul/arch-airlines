@@ -4,33 +4,33 @@ const database = {
     { parent: "About Us", slug: "./about-us.html", child: [] },
     { parent: "Services", slug: "./services.html", child: [] },
     {
-      parent: "Our Fleet",
-      slug: "./our-fleet.html",
+      parent: "Fleets",
+      slug: "./fleet.html",
       child: [
-        {
-          name: "Piaggio P-180 Avanti II",
-          slug: "./our-fleet/p-180-avanti-ii.html",
-        },
-        {
-          name: "Cessna Grand Caravan",
-          slug: "./our-fleet/cessna-grand-caravan.html",
-        },
-        {
-          name: "Pilatus Porter PC-6",
-          slug: "./our-fleet/pilatus-porter-pc-6.html",
-        },
-        {
-          name: "LET 410",
-          slug: "./our-fleet/let-410.html",
-        },
-        {
-          name: "Air Tractor AT-802",
-          slug: "./our-fleet/air-tractor-at-802.html",
-        },
-        {
-          name: "Agusta Koala A119",
-          slug: "./our-fleet/agusta-koala-a119.html",
-        },
+        // {
+        //   name: "Piaggio P-180 Avanti II",
+        //   slug: "./our-fleet/p-180-avanti-ii.html",
+        // },
+        // {
+        //   name: "Cessna Grand Caravan",
+        //   slug: "./our-fleet/cessna-grand-caravan.html",
+        // },
+        // {
+        //   name: "Pilatus Porter PC-6",
+        //   slug: "./our-fleet/pilatus-porter-pc-6.html",
+        // },
+        // {
+        //   name: "LET 410",
+        //   slug: "./our-fleet/let-410.html",
+        // },
+        // {
+        //   name: "Air Tractor AT-802",
+        //   slug: "./our-fleet/air-tractor-at-802.html",
+        // },
+        // {
+        //   name: "Agusta Koala A119",
+        //   slug: "./our-fleet/agusta-koala-a119.html",
+        // },
       ],
     },
     { parent: "News", slug: "./news.html", child: [] },
@@ -150,19 +150,29 @@ const database = {
       title: `Arch Airline unveils first destinations to be served with refurbished Boeing 777`,
     },
     {
-      date: "12 June 2024",
+      date: "25 June 2024",
       image: "news-4.jpg",
+      title: `Arch Airline triumphs with 7 award wins at the Skytrax World Airline Awards 2024`,
+    },
+    {
+      date: "12 June 2024",
+      image: "news-5.jpg",
       title: `Arch Airline celebrates one year of Premium Economy in Singapore`,
     },
     {
       date: "07 June 2024",
-      image: "news-5.jpg",
+      image: "news-6.jpg",
       title: `Arch Airline highlights the importance of punctuality at the airport for travel this summer`,
     },
     {
-      date: "02 June 2024",
-      image: "news-6.jpg",
+      date: "04 June 2024",
+      image: "news-7.jpg",
       title: `Arch Airline to fly to Madagascar via the Seychelles`,
+    },
+    {
+      date: "02 June 2024",
+      image: "news-8.jpeg",
+      title: `Arch Airline scores 3 top awards for Inflight Entertainment, Connectivity, and Premium Economy Class`,
     },
   ],
 
@@ -178,6 +188,29 @@ const database = {
       description:
         "Providing the highest value to customers through excellent Indonesian hospitality.",
       article: `<p class="text-xl font-bold">Company Vision</p><p class="italic">"TO BECOME A SUSTAINABLE AVIATION GROUP BY CONNECTING INDONESIA AND BEYOND WHILE DELIVERING INDONESIAN HOSPITALITY"</p><p class="text-xl font-bold">Company Mission</p><p class="italic">"STRENGTHENING BUSINESS FUNDAMENTAL THROUGH STRONG REVENUE GROWTH, COST LEADERSHIP IMPLEMENTATION, ORGANIZATION EFFECTIVENESS AND GROUP SYNERGY REINFORCEMENT WHILE FOCUSING ON HIGH STANDARD OF SAFETY AND CUSTOMER-ORIENTED SERVICES DELIVERED BY PROFESSIONAL & PASSIONATE EMPLOYEES"</p>`,
+    },
+  ],
+
+  fleets: [
+    {
+      title: "Pilatus Porter",
+      image: "fleet-1.jpg",
+    },
+    {
+      title: "Cessna Grand Caravan",
+      image: "fleet-2.jpg",
+    },
+    {
+      title: "Piaggio P-180 Avanti II",
+      image: "fleet-3.jpg",
+    },
+    {
+      title: "Air Tractor AT-802",
+      image: "fleet-4.jpg",
+    },
+    {
+      title: "LET 410",
+      image: "fleet-5.jpg",
     },
   ],
 };
