@@ -45,9 +45,18 @@ const navMenu = () => {
   const menu = database.menu;
   const navigation = document.getElementById("nav-menu");
   const mobNavMenu = document.getElementById("mobile-nav-menu");
+  const currentUrl = () => {
+    const url = window.location.href;
+    const urlSplit = url.split("/");
+    return urlSplit[urlSplit.length - 1];
+  };
 
   menu.map((item) => {
-    navigation.innerHTML += `<li class="group relative ${item.child && item.child.length > 0 ? "wrap-menu" : ""}"><a class="text-sm font-medium group-hover:text-primary py-3 text-foreground" href="${item.slug}">${item.parent}</a>${
+    const isActive =
+      currentUrl() === item.slug.substring(2)
+        ? "after:block after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[2px] after:bg-destructive text-primary"
+        : "text-foreground";
+    navigation.innerHTML += `<li class="group relative ${item.child && item.child.length > 0 ? "wrap-menu" : ""}"><a class="text-sm group-hover:text-primary py-3 font-medium  ${isActive}" href="${item.slug}">${item.parent}</a>${
       item.child && item.child.length > 0
         ? `<ul class="-translate-x-1/2 absolute bg-white duration-300 group-hover:md:block group-hover:opacity-100 hidden hover:md:block left-1/2 mt-2 opacity-0 overflow-hidden rounded-md shadow-lg submenu transform transition-opacity w-48">
     ${item.child

@@ -117,19 +117,31 @@ const database = {
   service: [
     {
       title: "First Class",
+      thumbnail: "thumbnail-1.jpg",
       image: "service-1.jpg",
+      description:
+        "Make the journey your own in First Class. Slide the doors closed on your Private Suite, adjust the mood lighting, and enjoy dining and entertainment on your terms.",
     },
     {
       title: "Bussiness Class",
+      thumbnail: "thumbnail-2.jpg",
       image: "service-2.jpg",
+      description:
+        "Fly Business Class and arrive inspired. Stretch out in lie-flat comfort, dine on international cuisine, and take a stroll to the A380 Onboard Lounge.",
     },
     {
       title: "Premium Class",
+      thumbnail: "thumbnail-3.jpg",
       image: "service-3.jpg",
+      description:
+        "Give yourself a higher level of comfort and relaxation in our new Premium Economy cabin. Recline your cream leather seat, extend the leg rests, and relax into a more luxurious journey.",
     },
     {
       title: "Economy Class",
+      thumbnail: "thumbnail-4.jpg",
       image: "service-4.jpg",
+      description:
+        "Experience an Economy Class that feels like an upgrade. Sit back in comfort, enjoy delicious multicourse meals, and lose yourself in thousands of movies, TV shows and more.",
     },
   ],
 
