@@ -618,6 +618,69 @@
         </div>
       </footer>
       <!-- Footer End -->
+
+      <!-- GroupModal Section start -->
+      <section
+        class="relative z-[999]"
+        id="groupModal"
+        aria-labelledby="modal-group"
+        role="dialog"
+        aria-modal="true"
+      >
+        <div
+          class="fixed inset-0 bg-slate-900 bg-opacity-75 transition-opacity"
+          aria-hidden="true"
+        ></div>
+
+        <div class="fixed inset-0 w-screen overflow-y-auto">
+          <div
+            class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+          >
+            <div
+              class="relative transform rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-xl"
+            >
+              <div class="rounded-lg bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                <button
+                  onclick="closeModal()"
+                  type="button"
+                  class="absolute -right-3 -top-3 rounded-full bg-destructive p-1"
+                >
+                  <span class="sr-only">Close modal</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="size-6 font-bold text-white"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                    />
+                    <path
+                      d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                    />
+                  </svg>
+                </button>
+                <h1 class="mb-4 text-2xl font-bold text-primary">Kelompok 3</h1>
+                <ul class="relative ml-4 list-inside list-disc">
+                  <li class="mb-2 text-xl font-semibold text-primary">
+                    Abdul Rasyid
+                  </li>
+                  <li class="mb-2 text-xl font-semibold text-primary">
+                    Sholikin
+                    <span class="text-destructive">( 230103251 )</span>
+                  </li>
+                  <li class="mb-2 text-xl font-semibold text-primary">
+                    Wachid Amirul Muslim
+                    <span class="text-destructive">( 230103253 )</span>
+                  </li>
+                </ul>
+                <div class="mt-8 text-primary" id="timer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- GroupModal Section start -->
     </main>
     <script type="text/javascript" src="./js/database.js"></script>
     <script type="text/javascript" src="./js/global.js"></script>

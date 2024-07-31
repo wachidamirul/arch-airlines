@@ -1,9 +1,34 @@
 document.addEventListener("DOMContentLoaded", () => {
+  introduction();
   getBandara();
   promoSlider();
   services();
   news();
 });
+
+const introduction = () => {
+  const groupModal = document.getElementById("groupModal");
+  const timerElement = document.getElementById("timer");
+  let countdown = 10;
+
+  const updateTimer = () => {
+    if (countdown > 0) {
+      timerElement.innerHTML = `Closing in <span class="text-destructive font-semibold text-base">${countdown}</span> seconds...`;
+      countdown--;
+    } else {
+      clearInterval(timerInterval);
+      groupModal.classList.add("hidden");
+    }
+  };
+
+  const timerInterval = setInterval(updateTimer, 1000);
+  updateTimer();
+};
+
+const closeModal = () => {
+  const groupModal = document.getElementById("groupModal");
+  groupModal.classList.add("hidden");
+};
 
 const getBandara = () => {
   const data = database.bandara;
